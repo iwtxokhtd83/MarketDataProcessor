@@ -1,2 +1,2 @@
 # MarketDataProcessor
-Run MarketDataApplication to test it.
+Run MarketDataApplication with JDK8+ to test it.
