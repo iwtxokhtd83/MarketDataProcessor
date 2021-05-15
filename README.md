@@ -1,2 +1,2 @@
 # MarketDataProcessor
-Coding exercise
+Run MarketDataApplication to test it.
