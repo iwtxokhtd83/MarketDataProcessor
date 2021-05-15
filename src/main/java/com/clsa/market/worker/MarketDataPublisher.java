@@ -28,7 +28,7 @@ public class MarketDataPublisher implements Runnable {
                                MarketDataPublishTaskExecutor marketDataPublishTaskExecutor) {
         this.publishThread = new Thread(this);
         this.publishThread.setName("thread-market-data-publisher");
-        this.rateLimiter = RateLimiter.create(1000);//Not called more than 100 times/second
+        this.rateLimiter = RateLimiter.create(100);//Not called more than 100 times/second
         this.go = new AtomicBoolean(true);
         this.marketDataProcessor = marketDataProcessor;
         this.symbolPublishQueue = symbolPublishQueue;
